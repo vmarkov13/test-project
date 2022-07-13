@@ -31,7 +31,7 @@
         ></a-camera>
 
         <a-entity
-                gltf-model="src: #model"
+                gltf-model="url(example.glb)"
                 position="0 0 -3"
                 id="target"
         ></a-entity>
@@ -42,6 +42,11 @@
 <!--            <a-plane position="0 0 0" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>-->
 <!--        </a-entity>-->
 
+        <a-entity light="type: directional; color: #FFF; intensity: 1" position="-2 3 3"></a-entity>
+        <a-entity light="type: directional; color: #FFF; intensity: 1" position="2 3 3"></a-entity>
+        <a-entity light="type: directional; color: #FFF; intensity: 1" position="-2 3 -3"></a-entity>
+        <a-entity light="type: directional; color: #FFF; intensity: 1" position="2 3 -3"></a-entity>
+        <a-entity light="type: directional; color: #FFF; intensity: .7" position="0 -3 0"></a-entity>
         <a-sky color="#001a33"></a-sky>
     </a-scene>
 
